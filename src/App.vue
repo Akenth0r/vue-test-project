@@ -136,10 +136,10 @@ export default {
       this.tickers.push(newTicker);
 
       this.ticker = "";
+    },
+    handleDelete(tickerToRemove) {
+      this.tickers = this.tickers.filter(t => t !== tickerToRemove);
     }
-  },
-  handleDelete(tickerToRemove) {
-    this.tickers = this.tickers.filter(t => t !== tickerToRemove);
   }
 };
 </script>
